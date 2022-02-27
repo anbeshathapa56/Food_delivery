@@ -53,7 +53,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
 
             ),
             child: Container(
-              padding: EdgeInsets.only(top: 10, left: 15, right: 15),
+              padding: EdgeInsets.only(top: 10, left: 15, right: 18),
               child: Column(
                 children: [
                   BigText(text: "Nepalese Side"),
