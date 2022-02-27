@@ -57,7 +57,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
               child: Column(
                 children: [
                   BigText(text: "Nepalese Side"),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 20,),
                   Row(
                     children: [
                       Wrap(
