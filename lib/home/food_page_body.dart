@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:fooddelivery/utilities/colors.dart';
+import 'package:fooddelivery/widgets/Big_test.dart';
 
 class FoodPageBody extends StatefulWidget {
   const FoodPageBody({Key? key}) : super(key: key);
@@ -44,11 +46,27 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           alignment: Alignment.bottomCenter,
           child: Container(
             height: 140,
-            margin: const EdgeInsets.only(left:40, right: 40, bottom: 15),
+            margin: const EdgeInsets.only(left:30, right: 30, bottom: 15),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
                 color: Colors.white ,
 
+            ),
+            child: Container(
+              padding: EdgeInsets.only(top: 10, left: 15, right: 15),
+              child: Column(
+                children: [
+                  BigText(text: "Nepalese Side"),
+                  SizedBox(height: 10,),
+                  Row(
+                    children: [
+                      Wrap(
+                        children: List.generate(5, (index) => Icon(Icons.star, color: AppColors.mainColor, size: 15,)),
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
         )
